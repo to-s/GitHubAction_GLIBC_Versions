@@ -1,0 +1,21 @@
+
+
+name: ldd_ubuntu_18
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  ldd_ubuntu_18:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: ldd --version
+        run: ldd --version
+
+
